@@ -1,0 +1,2 @@
+rootProject.name = "Shinhan_SOL"
+include ':app'
