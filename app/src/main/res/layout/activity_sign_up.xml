@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="140dp"
+            android:fontFamily="@font/nexon_lv1_gothic"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8EAED" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8EAED"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="#494949" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,240 +48,213 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/nexon_lv1_gothic"
-                    android:text="회원가입"
-                    android:textColor="#000000"
-                    android:textSize="28dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#E8EAED" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#E8EAED"
-                android:elevation="15dp"
-                android:outlineSpotShadowColor="#494949" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="30dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:fontFamily="@font/nexon_lv1_gothic"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="아이디"
-                    android:textColor="#0B0B0B"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="45dp">
+                <EditText
+                    android:id="@+id/edit_id"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
 
-                    <EditText
-                        android:id="@+id/signup_edit_id"
-                        android:layout_width="226dp"
-                        android:layout_height="wrap_content"
-                        android:hint=" 아이디를 적어주세요."
-                        android:textSize="14dp" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btn_overlap"
-                        android:layout_width="97dp"
-                        android:layout_height="35dp"
-                        android:background="@drawable/round_box"
-                        android:fontFamily="@font/nexon_lv1_gothic"
-                        android:text="중복확인"
-                        android:textColor="#ffffff"
-                        android:textColorHint="#ffffff"
-                        android:textSize="12dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="30dp">
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:fontFamily="@font/nexon_lv1_gothic"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="비밀번호"
-                    android:textColor="#0B0B0B"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
 
                 <EditText
-                    android:id="@+id/signup_edit_pw"
-                    android:layout_width="330dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:hint=" 비밀번호를 적어주세요."
-                    android:inputType="textPassword"
-                    android:textSize="14dp" />
-
+                    android:id="@+id/edit_pw"
+                    android:layout_width="375dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="30dp">
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:fontFamily="@font/nexon_lv1_gothic"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="비밀번호 확인"
-                    android:textColor="#0B0B0B"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
 
                 <EditText
-                    android:id="@+id/signup_edit_pw_check"
-                    android:layout_width="330dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:hint=" 비밀번호를 다시 적어주세요."
-                    android:inputType="textPassword"
-                    android:textSize="14dp" />
-
+                    android:id="@+id/edit_check_pw"
+                    android:layout_width="375dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="30dp">
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:fontFamily="@font/nexon_lv1_gothic"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="이메일"
-                    android:textColor="#0B0B0B"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
 
                 <EditText
-                    android:id="@+id/signup_edit_age"
-                    android:layout_width="330dp"
+                    android:id="@+id/edit_email"
+                    android:layout_width="375dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:hint=" 나이를 적어주세요."
-                    android:textSize="14dp" />
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
+                    android:text="주민등록번호"
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
+
+                <EditText
+                    android:id="@+id/edit_re"
+                    android:layout_width="375dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
+                    android:text="이름(실명)"
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="375dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
+                    android:text="별명"
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
+
+                <EditText
+                    android:id="@+id/edit_nick_name"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:hint="아이디를 적어주세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
+                    android:text="프로필 사진등록"
+                    android:textColor="#000000"
+                    android:textSize="23dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_register_photo"
+                    android:layout_width="150dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/round_box"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="사진선택"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="43dp"
-                android:paddingTop="30dp">
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                    <RadioGroup
-                        android:id="@+id/sign_radiogroup"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/sign_radio_man"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/nexon_lv1_gothic_bold"
-                            android:text="약관동의"
-                            android:textSize="20dp" />
-                    </RadioGroup>
-                </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="30dp">
-
-                <TextView
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:fontFamily="@font/nexon_lv1_gothic"
-                    android:text="주민등록번호"
-                    android:textColor="#0B0B0B"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-<!--                주민등록번호 디자인으로 만들기-->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingTop="30dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:fontFamily="@font/nexon_lv1_gothic"
-                        android:text="이름(실명)"
-                        android:textColor="#0B0B0B"
-                        android:textSize="18dp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/signup_edit_name"
-                        android:layout_width="330dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:hint=" 이름를 적어주세요."
-                        android:textSize="14dp" />
-
-                </LinearLayout>
+                    android:text="  약관동의"
+                    android:textSize="23dp"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical"-->
-<!--        android:paddingTop="60dp">-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signup"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_box"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:textStyle="bold" />
 
-<!--        <androidx.appcompat.widget.AppCompatButton-->
-<!--            android:id="@+id/btn_signup"-->
-<!--            android:layout_width="344dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:background="@drawable/round_box"-->
-<!--            android:layout_marginTop="570dp"-->
-<!--            android:fontFamily="@font/nexon_lv1_gothic"-->
-<!--            android:text="회원가입"-->
-<!--            android:textColor="#ffffff"-->
-<!--            android:textSize="22dp"-->
-<!--            android:textStyle="bold" />-->
-
-<!--    </LinearLayout>-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
