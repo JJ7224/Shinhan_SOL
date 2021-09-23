@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OTIDActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이제 마지막 단계입니다"
+        android:textSize="28dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/nexon_lv1_gothic"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="간편인증번호를 입력하세요"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/nexon_lv1_gothic"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#323232"
+        android:layout_marginTop="10dp"
+        android:text="6자리 숫자를 입력해주세요"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_box_vol2"
+        android:layout_marginTop="290dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexon_lv1_gothic_bold"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="가입완료"/>
+</LinearLayout>
