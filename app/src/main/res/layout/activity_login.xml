@@ -10,13 +10,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="160dp"
+            android:layout_marginTop="18dp"
             android:fontFamily="@font/nexon_lv1_gothic"
             android:text="로그인"
             android:textColor="#000000"
@@ -36,49 +36,38 @@
         android:elevation="15dp"
         android:outlineSpotShadowColor="#494949" />
 
-    <TextView
-        android:id="@+id/text_effect"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
+        android:orientation="vertical">
 
-        android:text="로그인 방식을\n선택해주세요."
-        android:textColor="#000000"
-        android:textSize="35dp" />
+        <EditText
+            android:id="@+id/login_edit_id"
+            android:layout_width="330dp"
+            android:hint="아이디를 입력하세요"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login"
-        android:layout_width="365dp"
-        android:layout_height="72dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/login_round_box"
-        android:fontFamily="@font/nexon_lv1_gothic_bold"
-        android:text="로그인"
-        android:textColor="#ffffff"
-        android:textSize="28dp" />
+        <EditText
+            android:id="@+id/login_edit_pw"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:hint="비밀번호를 입력하세요"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_OTID"
-        android:layout_width="365dp"
-        android:layout_height="72dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/login_round_box"
-        android:fontFamily="@font/nexon_lv1_gothic_bold"
-        android:text="간편인증번호"
-        android:textColor="#ffffff"
-        android:textSize="28dp" />
-
-    <TextView
-        android:id="@+id/text_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:text="아직 계정이 없으신가요? 회원가입 >"
-        android:textColor="#000000"
-        android:textSize="20dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn_login"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_box"
+            android:fontFamily="@font/nexon_lv1_gothic_bold"
+            android:layout_marginTop="30dp"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </LinearLayout>
 
 </LinearLayout>
