@@ -10,25 +10,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="140dp"
+            android:layout_marginTop="18dp"
             android:fontFamily="@font/nexon_lv1_gothic"
             android:text="회원가입"
             android:textColor="#000000"
             android:textSize="30dp" />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#E8EAED" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -38,7 +36,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="560dp"
+        android:layout_height="640dp"
         android:fillViewport="true">
 
         <LinearLayout
@@ -61,11 +59,28 @@
                     android:textColor="#000000"
                     android:textSize="23dp" />
 
-                <EditText
-                    android:id="@+id/edit_id"
-                    android:layout_width="230dp"
-                    android:layout_height="50dp"
-                    android:hint="아이디를 적어주세요" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_id"
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:hint="아이디" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_overlap"
+                        android:layout_width="107dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/round_box"
+                        android:fontFamily="@font/nexon_lv1_gothic_bold"
+                        android:text="중복확인"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp" />
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -88,7 +103,7 @@
                     android:id="@+id/edit_pw"
                     android:layout_width="375dp"
                     android:layout_height="50dp"
-                    android:hint="아이디를 적어주세요" />
+                    android:hint="비밀번호" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,7 +125,7 @@
                     android:id="@+id/edit_check_pw"
                     android:layout_width="375dp"
                     android:layout_height="50dp"
-                    android:hint="아이디를 적어주세요" />
+                    android:hint="비밀번호 확인" />
             </LinearLayout>
 
             <LinearLayout
@@ -132,8 +147,9 @@
                     android:id="@+id/edit_email"
                     android:layout_width="375dp"
                     android:layout_height="50dp"
-                    android:hint="아이디를 적어주세요" />
+                    android:hint="이메일" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -175,7 +191,7 @@
                     android:id="@+id/edit_name"
                     android:layout_width="375dp"
                     android:layout_height="50dp"
-                    android:hint="아이디를 적어주세요" />
+                    android:hint="이름" />
             </LinearLayout>
 
             <LinearLayout
@@ -197,7 +213,7 @@
                     android:id="@+id/edit_nick_name"
                     android:layout_width="230dp"
                     android:layout_height="50dp"
-                    android:hint="아이디를 적어주세요" />
+                    android:hint="별명" />
             </LinearLayout>
 
             <LinearLayout
@@ -219,9 +235,9 @@
                     android:id="@+id/btn_register_photo"
                     android:layout_width="150dp"
                     android:layout_height="42dp"
-                    android:background="@drawable/round_box"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="15dp"
+                    android:background="@drawable/round_box"
                     android:text="사진선택"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
@@ -237,21 +253,22 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/check_agree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="  약관동의"
-                    android:textSize="23dp"
-                    android:fontFamily="@font/nexon_lv1_gothic_bold"/>
+                    android:textSize="23dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_signup"
-        android:layout_marginTop="15dp"
         android:layout_width="320dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:background="@drawable/round_box"
         android:text="회원가입"
         android:textColor="#ffffff"
