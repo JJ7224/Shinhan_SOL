@@ -28,7 +28,8 @@ class SignUpActivity : AppCompatActivity() {
 
     }
 
-    fun signup() {
+    fun signup(activity: Activity) {
+
 
     }
 
