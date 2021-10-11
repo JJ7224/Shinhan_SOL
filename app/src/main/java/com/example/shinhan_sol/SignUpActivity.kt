@@ -29,6 +29,14 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     fun signup(activity: Activity) {
+        if(userPw.getText().toString().equals(userPwCheck.getText().toString())) {
+            val id = userId.text.toString()
+            val pw = userPw.text.toString()
+            val email = userEmail.text.toString()
+            val name = userName.text.toString()
+            val nickname = userNickName.text.toString()
+        }
+
 
 
     }
