@@ -3,10 +3,10 @@ package com.example.shinhan_sol
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.RadioGroup
+import android.widget.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -14,7 +14,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var userPw: EditText
     lateinit var userPwCheck: EditText
     lateinit var userEmail: EditText
-    //중간에 주민등록번호 넣어야함
+    lateinit var userBrith: EditText
     lateinit var userName: EditText
     lateinit var userNickName: EditText
     lateinit var btnRegisterPhoto: Button
@@ -26,19 +26,14 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
+        init(this@SignUpActivity)
+
     }
 
     fun signup(activity: Activity) {
         if(userPw.getText().toString().equals(userPwCheck.getText().toString())) {
-            val id = userId.text.toString()
-            val pw = userPw.text.toString()
-            val email = userEmail.text.toString()
-            val name = userName.text.toString()
-            val nickname = userNickName.text.toString()
+
         }
-
-
-
     }
 
     fun init(activity: Activity) {
@@ -47,7 +42,7 @@ class SignUpActivity : AppCompatActivity() {
         userPwCheck = activity.findViewById(R.id.edit_check_pw)
         userEmail = activity.findViewById(R.id.edit_email)
         userName = activity.findViewById(R.id.edit_name)
-        //중간에 주민등록번호 넣어야함
+        userBrith = activity.findViewById(R.id.edit_brith)
         userNickName = activity.findViewById(R.id.edit_nick_name)
         btnRegisterPhoto = activity.findViewById(R.id.btn_register_photo)
         checkAgree = activity.findViewById(R.id.check_agree)
