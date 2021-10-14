@@ -48,6 +48,7 @@ class MasterRetrofit : Application() {
     fun checkLogin(): Boolean {
         //로그인이 되었는가, 안되었는가 확인
         return true
+
     }
 
     fun getUserToken(): String? {

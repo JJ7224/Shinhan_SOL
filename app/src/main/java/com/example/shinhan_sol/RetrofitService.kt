@@ -1,18 +1,25 @@
 package com.example.shinhan_sol
 
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.POST
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.http.*
+
 
 interface RetrofitService {
 
     @POST("/login")
     fun login(
         @Body login: Login
-    ):Call<Any?>
+    ): Call<Any?>
 
+    @Multipart
     @POST("/signup")
     fun signup(
-        @Body signUp: SignUp
-    ):Call<Any?>
+        @Part image: SignUp,
+        @PartMap data: HashMap<String, RequestBody>
+    ): Call<Any?>
 }
