@@ -1,10 +1,11 @@
-package com.example.shinhan_sol
+package com.example.shinhan_sol.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.example.shinhan_sol.R
 
 class SelectLoginActivity : AppCompatActivity() {
 

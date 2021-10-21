@@ -1,4 +1,4 @@
-package com.example.shinhan_sol
+package com.example.shinhan_sol.activity
 
 import android.content.Intent
 import android.graphics.Color
@@ -9,6 +9,7 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.widget.Button
 import android.widget.TextView
+import com.example.shinhan_sol.R
 
 class LoginStartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

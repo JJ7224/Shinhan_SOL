@@ -1,4 +1,4 @@
-package com.example.shinhan_sol
+package com.example.shinhan_sol.data_type
 
 import java.io.Serializable
 

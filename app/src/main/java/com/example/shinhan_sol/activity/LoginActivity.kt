@@ -1,10 +1,13 @@
-package com.example.shinhan_sol
+package com.example.shinhan_sol.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
+import com.example.shinhan_sol.MasterRetrofit
+import com.example.shinhan_sol.R
+import com.example.shinhan_sol.data_type.Login
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
