@@ -38,7 +38,7 @@ class MasterRetrofit : Application() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("ddd")
+            .baseUrl("http://10.80.161.222:5000")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
@@ -46,14 +46,18 @@ class MasterRetrofit : Application() {
     }
 
     fun checkLogin(): Boolean {
-        //로그인이 되었는가, 안되었는가 확인
-        return true
-
+        //DB 써서 로그인 됐는지 안됐는지 확인하는 함수
+        val sp = getSharedPreferences("login_sp", Context.MODE_PRIVATE)
+        val token = sp.getString("login_sp", "null")
+        if (token != "null") return false
+        else return true
     }
 
     fun getUserToken(): String? {
         //로그인이 됐으면 토큰주고, 아니면 NULL
-        val token = "토큰"
-        return token
+        val sp = getSharedPreferences("login_sp", Context.MODE_PRIVATE)
+        val token = sp.getString("login_sp", "null")
+        if (token == "null") return null
+        else return token
     }
 }
