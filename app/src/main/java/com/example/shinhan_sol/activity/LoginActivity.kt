@@ -41,7 +41,6 @@ class LoginActivity : AppCompatActivity() {
                             startActivity(intent)
                         }
                     }
-
                     override fun onFailure(call: Call<Any?>, t: Throwable) {
                         Toast.makeText(this@LoginActivity, "로그인에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
                     }
