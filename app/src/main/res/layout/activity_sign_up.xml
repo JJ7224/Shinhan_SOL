@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+
     android:orientation="vertical"
     tools:context=".activity.SignUpActivity">
 
@@ -23,10 +25,12 @@
             android:textSize="30dp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#E8EAED" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -70,7 +74,7 @@
                         android:layout_height="50dp"
                         android:hint="아이디" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/btn_overlap"
                         android:layout_width="107dp"
                         android:layout_height="40dp"
@@ -78,6 +82,7 @@
                         android:background="@drawable/round_box"
                         android:fontFamily="@font/nexon_lv1_gothic_bold"
                         android:text="중복확인"
+                        android:gravity="center"
                         android:textColor="#ffffff"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -231,7 +236,7 @@
                     android:textColor="#000000"
                     android:textSize="23dp" />
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/btn_register_photo"
                     android:layout_width="150dp"
                     android:layout_height="42dp"
@@ -263,16 +268,17 @@
         </LinearLayout>
     </ScrollView>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btn_signup"
         android:layout_width="320dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/round_box"
+        android:gravity="center"
         android:text="회원가입"
         android:textColor="#ffffff"
-        android:textSize="28dp"
+        android:textSize="24dp"
         android:textStyle="bold" />
 
 </LinearLayout>
