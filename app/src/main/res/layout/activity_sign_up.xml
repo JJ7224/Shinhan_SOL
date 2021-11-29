@@ -74,11 +74,11 @@
                         android:layout_height="50dp"
                         android:hint="아이디" />
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_overlap"
                         android:layout_width="107dp"
                         android:layout_height="40dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="8dp"
                         android:background="@drawable/round_box"
                         android:fontFamily="@font/nexon_lv1_gothic_bold"
                         android:text="중복확인"
@@ -268,7 +268,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_signup"
         android:layout_width="320dp"
         android:layout_height="55dp"
@@ -278,7 +278,7 @@
         android:gravity="center"
         android:text="회원가입"
         android:textColor="#ffffff"
-        android:textSize="24dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
 </LinearLayout>
