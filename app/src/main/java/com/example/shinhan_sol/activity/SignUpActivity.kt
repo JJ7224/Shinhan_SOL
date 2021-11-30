@@ -24,27 +24,28 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        init(this@SignUpActivity)
+        init()
 
     }
 
     fun signup(activity: Activity) {
+
         if(userPw.getText().toString().equals(userPwCheck.getText().toString())) {
 
         }
     }
 
-    fun init(activity: Activity) {
-        userId = activity.findViewById(R.id.edit_id)
-        userPw = activity.findViewById(R.id.edit_pw)
-        userPwCheck = activity.findViewById(R.id.edit_check_pw)
-        userEmail = activity.findViewById(R.id.edit_email)
-        userName = activity.findViewById(R.id.edit_name)
-        userBrith = activity.findViewById(R.id.edit_brith)
-        userNickName = activity.findViewById(R.id.edit_nick_name)
-        btnRegisterPhoto = activity.findViewById(R.id.btn_register_photo)
-        checkAgree = activity.findViewById(R.id.check_agree)
-        btnSignup = activity.findViewById(R.id.btn_signup)
-        btnOverlap = activity.findViewById(R.id.btn_overlap)
+    fun init() {
+        userId = findViewById(R.id.edit_id)
+        userPw = findViewById(R.id.edit_pw)
+        userPwCheck = findViewById(R.id.edit_check_pw)
+        userEmail = findViewById(R.id.edit_email)
+        userName = findViewById(R.id.edit_name)
+        userBrith = findViewById(R.id.edit_brith)
+        userNickName = findViewById(R.id.edit_nick_name)
+        btnRegisterPhoto = findViewById(R.id.btn_register_photo)
+        checkAgree = findViewById(R.id.check_agree)
+        btnSignup = findViewById(R.id.btn_signup)
+        btnOverlap = findViewById(R.id.btn_overlap)
     }
 }
