@@ -61,7 +61,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="아이디"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                         android:background="@drawable/round_box"
                         android:fontFamily="@font/nexon_lv1_gothic_bold"
                         android:text="중복확인"
-                        android:gravity="center"
+                        android:layout_gravity="center"
                         android:textColor="#ffffff"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -102,7 +102,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="비밀번호"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edit_pw"
@@ -124,7 +124,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="비밀번호 확인"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edit_check_pw"
@@ -146,7 +146,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="이메일"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edit_email"
@@ -168,7 +168,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="주민등록번호"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edit_brith"
@@ -190,7 +190,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="이름(실명)"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edit_name"
@@ -212,7 +212,7 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="별명"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edit_nick_name"
@@ -234,18 +234,18 @@
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="프로필 사진등록"
                     android:textColor="#000000"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_register_photo"
-                    android:layout_width="150dp"
+                    android:layout_width="120dp"
                     android:layout_height="42dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/round_box"
                     android:text="사진선택"
                     android:textColor="#ffffff"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -263,7 +263,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="  약관동의"
-                    android:textSize="23dp" />
+                    android:textSize="20dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
