@@ -1,6 +1,7 @@
 package com.example.shinhan_sol
 
 import com.example.shinhan_sol.data_type.Login
+import com.example.shinhan_sol.data_type.OTID
 import com.example.shinhan_sol.data_type.SignUp
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -18,5 +19,10 @@ interface RetrofitService {
     fun signup(
         @Body signUp: SignUp
     ): Call<SignUp>
+
+    @POST("/signup/quick")
+    fun signupOtid(
+        @Body otid: String
+    ): Call<OTID>
 
 }
