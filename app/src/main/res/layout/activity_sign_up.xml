@@ -39,7 +39,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="480dp"
         android:fillViewport="true">
 
         <LinearLayout
@@ -110,7 +110,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="비밀번호"
                     android:layout_marginLeft="18dp"
@@ -135,7 +135,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="비밀번호 확인"
                     android:layout_marginLeft="18dp"
@@ -160,7 +160,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="전화번호"
                     android:layout_marginLeft="18dp"
@@ -186,7 +186,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="생년월일"
                     android:layout_marginLeft="18dp"
@@ -212,7 +212,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="이름"
                     android:layout_marginLeft="18dp"
@@ -237,7 +237,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="닉네임"
                     android:layout_marginLeft="18dp"
@@ -262,7 +262,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginLeft="18dp"
                     android:fontFamily="@font/nexon_lv1_gothic_bold"
                     android:text="프로필 사진등록"
@@ -289,9 +289,9 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_signup"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="45dp"
         android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"
         android:background="@drawable/round_box"
