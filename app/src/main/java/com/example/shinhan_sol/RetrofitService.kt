@@ -14,20 +14,9 @@ interface RetrofitService {
         @Body login: Login
     ): Call<Any?>
 
-    @POST("/login/quick")
-    fun loginOTID(
-        @Query("quickpw") quickpw: String
-    ): Call<Any?>
-
-    @Multipart
     @POST("/signup")
     fun signup(
-        @Part image: SignUp,
-        @PartMap data: HashMap<String, RequestBody>
-    ): Call<Any?>
+        @Body signUp: SignUp
+    ): Call<SignUp>
 
-    @POST("/signup/quick")
-    fun signupOTID(
-        @Query("quickpw") quickpw: String
-    ): Call<Any?>
 }
