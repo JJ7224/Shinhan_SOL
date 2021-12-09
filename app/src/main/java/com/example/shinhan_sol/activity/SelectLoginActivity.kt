@@ -23,7 +23,7 @@ class SelectLoginActivity : AppCompatActivity() {
         }
 
         btn_OTID.setOnClickListener {
-            val intent_OTID = Intent(this@SelectLoginActivity, LoginOTIDActivity::class.java)
+            val intent_OTID = Intent(this@SelectLoginActivity, OTIDLoginActivity::class.java)
             startActivity(intent_OTID)
         }
 
