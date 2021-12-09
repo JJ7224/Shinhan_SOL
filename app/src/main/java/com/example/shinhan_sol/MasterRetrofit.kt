@@ -16,7 +16,7 @@ class MasterRetrofit {
 
         val retrofit: Retrofit = Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl("http://192.168.0.21:8040/")
+            .baseUrl("http://10.80.161.222:5000/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

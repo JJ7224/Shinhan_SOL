@@ -13,7 +13,7 @@ interface RetrofitService {
     @POST("/login")
     fun login(
         @Body login: Login
-    ): Call<Any?>
+    ): Call<Login>
 
     @POST("/signup")
     fun signup(
