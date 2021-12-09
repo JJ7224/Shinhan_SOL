@@ -24,7 +24,7 @@ class OTIDActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otidactivity)
 
-        init(this@OTIDActivity)
+        init()
 
         btnOTID.setOnClickListener {
             OTIDsignup()
@@ -49,15 +49,15 @@ class OTIDActivity : AppCompatActivity() {
             override fun onFailure(call: Call<OTID>, t: Throwable) {
                 Toast.makeText(this@OTIDActivity, "입력 정보가 잘못되었습니다",
                     Toast.LENGTH_SHORT).show()
-
-
+                val intent = Intent(this@OTIDActivity, MainActivity::class.java)
+                startActivity(intent)
             }
 
         })
     }
 
 
-    fun init(activity: Activity) {
+    fun init() {
         userOTID = findViewById(R.id.edit_OTID)
         btnOTID = findViewById(R.id.btn_OTID)
     }
