@@ -3,6 +3,7 @@ package com.example.shinhan_sol.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.shinhan_sol.MasterRetrofit
@@ -16,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
 
     lateinit var userId: EditText
     lateinit var userPw: EditText
-    lateinit var login_btn_login: EditText
+    lateinit var login_btn_login: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +28,9 @@ class LoginActivity : AppCompatActivity() {
         login_btn_login.setOnClickListener {
             val id = userId.text.toString()
             val pw = userPw.text.toString()
-            val login = Login(id, pw)
             val service = MasterRetrofit().TokenRetrofit()
-            service.login(login).enqueue(object : Callback<Any?> {
-                override fun onResponse(call: Call<Any?>, response: Response<Any?>) {
+            service.login(Login(id, pw)).enqueue(object : Callback<Login> {
+                override fun onResponse(call: Call<Login>, response: Response<Login>) {
                     if (response.isSuccessful) {
                         Toast.makeText(this@LoginActivity, "로그인에 성공하셨습니다.", Toast.LENGTH_SHORT)
                             .show()
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<Any?>, t: Throwable) {
+                override fun onFailure(call: Call<Login>, t: Throwable) {
                     Toast.makeText(this@LoginActivity, "로그인에 실패하셨습니다.", Toast.LENGTH_SHORT).show()
                 }
             })
