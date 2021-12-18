@@ -5,18 +5,19 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".MasterRetrofit"
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shinhan_SOL">
-        <activity android:name=".activity.LoginOTIDActivity">
+        <activity android:name=".activity.OTIDLoginActivity"></activity>
+        <activity android:name=".activity.LoginOTIDActivity"></activity>
+        <activity android:name=".activity.LoginActivity">
 
         </activity>
-        <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.OTIDActivity" >
+        <activity android:name=".activity.OTIDActivity">
 
         </activity>
         <activity android:name=".activity.SignUpActivity" />
@@ -27,7 +28,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".activity.MainActivity" />
     </application>
